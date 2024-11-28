@@ -11,6 +11,8 @@
     "text_column_name":"text",
     "train_split_name": "train",
     "eval_split_name": "test",
+    "speaker_id_column_name": "speaker_id",
+    "override_speaker_embeddings": true,
 
     "full_generation_sample_text": "Nǔ enɛ ɖò dandan bo na dó bló kɔ́zún lɛ kpo xùtó lɛ kpo, bɔ ye nɔ nyí fí e kanlin lɛ nɔ nɔ é.",
     
