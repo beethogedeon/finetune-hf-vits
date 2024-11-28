@@ -1,28 +1,24 @@
 {
-    "project_name": "mms_gujarati_finetuning",
+    "project_name": "mms_fon_finetuned",
     "push_to_hub": true,
-    "hub_model_id": "ylacombe/mms-tts-guj-train",
+    "hub_model_id": "beethogedeon/tts-fon-finetuned",
     "report_to": ["wandb"],
     "overwrite_output_dir": true,
-    "output_dir": "./tmp/vits_finetuned_guj",
+    "output_dir": "./tmp/vits_fon_finetuned",
 
-    "dataset_name": "ylacombe/google-gujarati",    
-    "dataset_config_name": "male", 
+    "dataset_name": "beethogedeon/fongbe-speech-dataset-female",
     "audio_column_name": "audio", 
     "text_column_name":"text",
     "train_split_name": "train",
-    "eval_split_name": "train",
-    "speaker_id_column_name": "speaker_id",
-    "override_speaker_embeddings": true,
-    "filter_on_speaker_id": 5251,
+    "eval_split_name": "test",
 
-    "full_generation_sample_text": "આજે દુબલીમાં ગરમી છે, શું આશ્ચર્ય છે",
+    "full_generation_sample_text": "Nǔ enɛ ɖò dandan bo na dó bló kɔ́zún lɛ kpo xùtó lɛ kpo, bɔ ye nɔ nyí fí e kanlin lɛ nɔ nɔ é.",
     
     "max_duration_in_seconds": 20,
     "min_duration_in_seconds": 1.0,
     "max_tokens_length": 500,
 
-    "model_name_or_path": "ylacombe/mms-tts-guj-train",
+    "model_name_or_path": "facebook/mms-tts-fon",
 
 
     "preprocessing_num_workers": 4,
@@ -31,7 +27,7 @@
     "num_train_epochs": 200,
     "gradient_accumulation_steps": 1,
     "gradient_checkpointing": false,
-    "per_device_train_batch_size": 16,
+    "per_device_train_batch_size": 32,
     "learning_rate": 2e-5,
     "adam_beta1": 0.8,
     "adam_beta2": 0.99,
@@ -40,7 +36,7 @@
 
     "do_eval": true, 
     "eval_steps": 50,
-    "per_device_eval_batch_size": 16,
+    "per_device_eval_batch_size": 32,
     "max_eval_samples": 25, 
     "do_step_schedule_per_epoch": true,
 
