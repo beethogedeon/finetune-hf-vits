@@ -1,7 +1,7 @@
 {
     "project_name": "mms_fon_finetuned",
     "push_to_hub": true,
-    "hub_model_id": "beethogedeon/tts-fon-finetuned",
+    "hub_model_id": "beethogedeon/tts-fon-finetuned-16",
     "report_to": ["wandb"],
     "overwrite_output_dir": true,
     "output_dir": "./tmp/vits_fon_finetuned",
