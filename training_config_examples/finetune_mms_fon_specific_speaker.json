@@ -1,5 +1,5 @@
 {
-    "project_name": "fon_tts_finetuned",
+    "project_name": "fon_tts_finetuned_specific_speaker",
     "push_to_hub": true,
     "hub_model_id": "beethogedeon/tts-fon-fem-2",
     "overwrite_output_dir": true,
